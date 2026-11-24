@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ruang Bicara — Belajar Berkomunikasi Efektif</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-content">
+      <div class="logo">Ruang<span>Bicara</span></div>
+      <nav>
+        <a href="#materi">Materi Dasar</a>
+        <a href="#simulasi">Simulasi Dialog</a>
+        <a href="#tips">Checklist</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <span class="badge">Platform Edukasi Komunikasi</span>
+        <h1>Sampaikan Pesan dengan Jelas, Bangun Koneksi Bermakna</h1>
+        <p>Pelajari teknik mendengar aktif, komunikasi asertif, dan uji kemampuan merespons situasi sehari-hari secara interaktif.</p>
+        <a href="#simulasi" class="btn-primary">Mulai Latihan Simulasi</a>
+      </div>
+    </section>
+
+    <!-- Materi Dasar Section -->
+    <section id="materi" class="section">
+      <div class="container">
+        <h2 class="section-title">4 Pilar Komunikasi Efektif</h2>
+        <div class="card-grid">
+          <article class="card">
+            <div class="card-icon">👂</div>
+            <h3>Active Listening</h3>
+            <p>Fokus penuh pada lawan bicara tanpa memotong, memahami maksud tersirat, dan memberikan umpan balik yang relevan.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">💬</div>
+            <h3>Komunikasi Asertif</h3>
+            <p>Menyampaikan pendapat, kebutuhan, dan batasan secara jujur dan tegas namun tetap menghargai perasaan orang lain.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">🤝</div>
+            <h3>Empati & Validasi</h3>
+            <p>Memposisikan diri di sudut pandang lawan bicara dan mengakui emosi mereka sebelum menawarkan solusi.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">✨</div>
+            <h3>Bahasa Non-Verbal</h3>
+            <p>Menyelaraskan kontak mata, postur tubuh terbuka, dan intonasi suara agar pesan tidak disalahartikan.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Simulasi Dialog Interaktif -->
+    <section id="simulasi" class="section bg-soft">
+      <div class="container">
+        <h2 class="section-title">Simulasi Respons Komunikasi</h2>
+        <p class="section-subtitle">Pilih respons terbaik sesuai prinsip komunikasi asertif dan empatik.</p>
+
+        <div class="simulator-box">
+          <div class="progress-bar">
+            <span id="question-counter">Skenario 1 dari 3</span>
+            <span id="score-display">Skor: 0</span>
+          </div>
+
+          <div class="scenario-card">
+            <span class="tag" id="scenario-category">Kerja Kelompok</span>
+            <h3 id="scenario-title">Situasi</h3>
+            <p id="scenario-text" class="scenario-desc"></p>
+          </div>
+
+          <div id="options-container" class="options-list"></div>
+
+          <div id="feedback-box" class="feedback hidden">
+            <h4 id="feedback-title"></h4>
+            <p id="feedback-text"></p>
+            <button id="next-btn" class="btn-primary">Skenario Berikutnya</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Checklist Praktis -->
+    <section id="tips" class="section">
+      <div class="container">
+        <h2 class="section-title">Checklist Sebelum Berbicara</h2>
+        <div class="checklist-card">
+          <label class="check-item">
+            <input type="checkbox" />
+            <span><strong>Gunakan "I-Statement":</strong> Ganti kalimat menyalahkan ("Kamu selalu terlambat") menjadi perasaanmu ("Saya khawatir jadwal kita mundur").</span>
+          </label>
+          <label class="check-item">
+            <input type="checkbox" />
+            <span><strong>Jeda 2 Detik:</strong> Beri jeda sejenak setelah lawan bicara selesai agar kamu tidak bereaksi secara impulsif.</span>
+          </label>
+          <label class="check-item">
+            <input type="checkbox" />
+            <span><strong>Parafrase:</strong> Ulangi inti pesan lawan bicara dengan kalimatmu sendiri untuk memastikan tidak ada miskomunikasi.</span>
+          </label>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>Dibuat untuk pembelajaran komunikasi interaktif • Open Source di GitHub</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
